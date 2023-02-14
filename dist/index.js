@@ -7,7 +7,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const express_1 = __importDefault(require("express"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
-app.get("/", (req, res) => res.send("Welcome to My API"));
+app.get("/", (req, res) => res.send("Welcome to Awesome API"));
 app.listen(process.env.PORT, () => {
     console.log(`Server Up and Running on Port ${process.env.PORT}`);
 });

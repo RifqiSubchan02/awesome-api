@@ -5,7 +5,9 @@ dotenv.config();
 
 const app: Express = express();
 
-app.get("/", (req: Request, res: Response) => res.send("Welcome to My API"));
+app.get("/", (req: Request, res: Response) =>
+  res.send("Welcome to Awesome API")
+);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server Up and Running on Port ${process.env.PORT}`);
