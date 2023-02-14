@@ -10,3 +10,5 @@ app.get("/", (req: Request, res: Response) => res.send("Welcome to My API"));
 app.listen(process.env.PORT, () => {
   console.log(`Server Up and Running on Port ${process.env.PORT}`);
 });
+
+export default app;
