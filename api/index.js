@@ -9,7 +9,7 @@ const routes_1 = require("./routes");
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.get("/", (req, res) => res.send("Welcome to Awesome API"));
-app.use("/api/employee", routes_1.employee);
+app.use("/employee", routes_1.employee);
 app.listen(process.env.PORT, () => {
     console.log(`Server Up and Running on Port ${process.env.PORT}`);
 });
