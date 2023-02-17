@@ -6,7 +6,7 @@ dotenv.config();
 
 const app: Express = express();
 
-app.get("/api", (req: Request, res: Response) =>
+app.get("/", (req: Request, res: Response) =>
   res.send("Welcome to Awesome API")
 );
 
